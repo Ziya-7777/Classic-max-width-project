@@ -132,6 +132,32 @@ header nav ul li a:hover {
   background-color: var(--theme-orange);
 }
 
+header nav ul li .menu{
+  color: var(--theme-orange);
+  border: 1px solid var(--theme-orange);
+  background-color: var(--theme-white);
+  padding: 10px 12px;
+}
+header nav .dropdown-toggler{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+header nav .dropdown-menu{
+  background-color: var(--theme-white);
+  width: 120px;
+  border-radius: 5px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+header nav .dropdown-toggler:hover .dropdown-menu{
+  display: block;
+}
+header nav .dropdown-menu li a{
+  width: 100%;
+}
 /* header section end  */
 
 /* hero section start  */
