@@ -1,0 +1,352 @@
+:root {
+  --theme-white: #fff;
+  --theme-orange: #cc9900;
+  --theme-dark-orange: #906E09;
+  --theme-blue: #014c8c;
+  --theme-text-color: #8c8c8c;
+  --theme-yellow: #CCCC66;
+  --theme-footer-gray:#CCCCCC;
+  --theme-black: black;
+  --theme-footer-button:#666666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.col-12 {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.col-4 {
+  width: 33.33%;
+  padding: 0 5px;
+}
+
+.col-3 {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.m-tb-60{
+  margin: 60px 0;
+}
+.m-tb-20{
+  margin: 20px 0;
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+.mr-20{
+  margin-right: 20px;
+}
+
+/* header section start  */
+header {
+  padding: 1.5rem 0;
+}
+
+header .topbar .logo {
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--theme-orange);
+  transition: all 0.3s ease;
+}
+
+header .topbar .logo:hover {
+  color: var(--theme-blue);
+}
+
+header nav ul li a {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 15px 35px;
+  margin-right: 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+header nav ul li .active {
+  color: var(--theme-white);
+  background-color: var(--theme-orange);
+}
+
+header nav ul li a:hover {
+  color: var(--theme-white);
+  background-color: var(--theme-orange);
+}
+
+/* header section end  */
+
+/* hero section start  */
+.hero {
+  height: 500px;
+  background-image: url(../images/hero-bg-img.jpg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* hero section end  */
+
+/* intro section start  */
+.intro {
+  padding: 30px 0;
+}
+
+.intro .intro-content {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.intro .intro-content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--theme-orange);
+  margin-bottom: 1rem;
+}
+
+.intro .intro-content p {
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--theme-text-color);
+  line-height: 40px;
+}
+
+.intro .intro-cards .card img {
+  margin-bottom: 20px;
+}
+
+.intro .intro-cards .card h4 {
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--theme-orange);
+  margin-bottom: 20px;
+}
+
+.intro .intro-cards .card p {
+  color: var(--theme-text-color);
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.intro .intro-cards .card a {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--theme-white);
+  background-color: var(--theme-orange);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  transition: all 0.3s ease;
+}
+
+.intro .intro-cards .card a:hover {
+  background-color: var(--theme-dark-orange);
+}
+
+/* intro section end  */
+
+/* categories section start  */
+.categories {
+  padding: 80px 0;
+}
+
+.categories .categories-content h2 {
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--theme-orange);
+  margin-bottom: 1rem;
+}
+
+.categories .categories-content p {
+  color: var(--theme-text-color);
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.categories .categories-content .useful-link h2 {
+  margin-bottom: 60px;
+}
+
+.categories .categories-content .useful-link a {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--theme-blue);
+  text-decoration: underline;
+  margin-bottom: 25px;
+}
+
+.categories .categories-content .useful-link a:hover {
+  text-decoration: none;
+}
+
+.categories .categories-content .useful-link .btn,.btn {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--theme-white);
+  background-color: var(--theme-orange);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+.categories .categories-content .useful-link .btn:hover,.btn:hover{
+  background-color: var(--theme-dark-orange);
+  cursor: pointer;
+}
+.categories .categories-content .related-post{
+  margin: 20px 0;
+} 
+.categories .categories-content .related-post p{
+  line-height: 40px;
+}
+.categories .categories-content .media{
+  margin: 60px 0;
+}
+.categories .categories-content .media .posts{
+  margin: 20px 0;
+}
+.categories .categories-content .media .posts img{
+ padding-right: 20px;
+}
+.categories .categories-content .media .posts .post-detail h3{
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--theme-orange);
+  margin-bottom: 15px;
+}
+.categories .categories-content .media .posts .post-detail p{
+  font-size: 14px;
+  line-height: 30px;
+  border-bottom: 1px solid var(--theme-text-color);
+  padding-bottom: 20px;
+  margin: 0;
+}
+/* categories section end  */
+
+/*footer section starts*/
+
+footer{
+  color: var(--theme-orange);
+  background-color: var(--theme-orange);
+  background-image: url(../images/classic-pattern-bg.png);
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 1rem;
+}
+footer .footer-content .card .btn{
+  background-color: var(--theme-footer-button);
+}
+
+footer .footer-content .card .btn:hover{
+   background-color: var(--theme-dark-orange);
+}
+
+footer .footer-content .card .gray-bg p{
+  background-color: var(--theme-footer-gray);
+  color: var(--theme-white);
+  padding: 20px;
+  line-height: 25px;
+}
+
+footer .footer-content .card .gray-bg p span{
+  font-weight: 600;
+  color: var(--theme-black);
+}
+
+footer .footer-content .card .useful-link a{
+  color: var(--theme-yellow);
+  font-size: 16px;
+  gap: 60px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+footer .footer-content .card .useful-link a:hover{
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .footer-content .card p{
+  line-height: 30px;
+  margin: 20px 0;
+  color: var(--theme-white);
+}
+
+footer .footer-content .copyright-content{
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--theme-text-color);
+}
+
+/*footer section ends*/
+
+
+
+
+
+  
+ 
+
+
+
+
+
